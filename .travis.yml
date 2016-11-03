@@ -24,3 +24,4 @@ before_script:
   - mysql -u root -e 'CREATE DATABASE socialbro_test_logs;'
   - mysql -u root -e 'CREATE DATABASE socialbro_twittergraphs;'
   - mysql -u root -e 'CREATE DATABASE test;'
+  - redis-cli INFO
