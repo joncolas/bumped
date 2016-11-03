@@ -3,6 +3,19 @@ dist: trusty
 language: node_js
 node_js:
   - "4.4.3"
-
-
-
+addons:
+  apt:
+    packages:
+    - mysql-server-5.6
+    - mysql-client-core-5.6
+    - mysql-client-5.6
+before_script:
+  - mysql -u root -e 'CREATE DATABASE socialbro;'
+  - mysql -u root -e 'CREATE DATABASE socialbro_bbdd;'
+  - mysql -u root -e 'CREATE DATABASE socialbro_bbdd_shard1;'
+  - mysql -u root -e 'CREATE DATABASE socialbro_bbdd_shard2;'
+  - mysql -u root -e 'CREATE DATABASE socialbro_desktop_test;'
+  - mysql -u root -e 'CREATE DATABASE socialbro_development_test;'
+  - mysql -u root -e 'CREATE DATABASE socialbro_test_logs;'
+  - mysql -u root -e 'CREATE DATABASE socialbro_twittergraphs;'
+  - mysql -u root -e 'CREATE DATABASE test;'
