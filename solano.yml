@@ -1,4 +1,4 @@
-# config/solano.yml
+# solano.yml
 ---
 test_pattern:
   - features/*.feature
