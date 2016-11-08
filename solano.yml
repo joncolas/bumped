@@ -1,11 +1,17 @@
 # config/solano.yml
 ---
-nodejs:
-  version: '4.4.0'
-hooks:
-  pre_setup: npm install
-tests:
-  - npm test
+test_pattern:
+  - features/*.feature
+  - features/api/*.feature
+  - spec/**/*_spec.rb
+  - test/**/*_test.rb
+postgresql:
+  version: '9.1'
+mysql:
+  version: '5.5'
+sqlite: false
+phantomjs:
+  version: '1.8.1'
 ## BEGIND travis file
 #sudo: required
 #dist: trusty
