@@ -4,7 +4,7 @@ machine:
     America/Los_Angeles # Set the timezone
   # Node Version to use
   node:
-    version: 0.10.22
+    version: 4.4.3
   # Override /etc/hosts
   hosts:
     audiense.test: 127.0.0.1
