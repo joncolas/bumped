@@ -1,4 +1,12 @@
-## BEGIN of solano file
+# config/solano.yml
+---
+postgresql:
+  version: '9.1'
+mysql:
+  version: '5.5'
+sqlite: false
+phantomjs:
+  version: '1.8.1'
 nodejs:
   version: '4.4.3'
 hooks:
