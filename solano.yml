@@ -1,10 +1,4 @@
 # solano.yml
----
-mysql:
-  version: '5.5'
-sqlite: false
-phantomjs:
-  version: '1.8.1'
 ## BEGIND travis file
 #sudo: required
 #dist: trusty
